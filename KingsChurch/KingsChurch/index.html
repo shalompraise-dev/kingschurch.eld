@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kings Highway Church</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+
+    <div class="nav-wrapper">
+        <!-- Peeking News Strip -->
+        <div class="peeking-news" id="peekingNews" >
+            📢 Next Baptism Sunday – Dec 7th! Sign Up Today.
+        </div>
+
+        <!-- Navigation -->
+        <header class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Kings Highway Church Logo" />
+                    </a>   
+                </div>
+
+                <nav class="nav__links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="involved.html">Get Involved</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="give.html">Give</a>
+                </nav>
+
+                <div class="nav__actions">
+                    <a href="watch.html" class="btn btn--outline btn--small">Watch</a>
+                    <div class="nav__toggle" id="navToggle">
+                        <img src="assets/images/icon-menu.png" alt="Menu Icon" id="menuIcon" />
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div> 
+      
+
+  
+
+  <!-- Hero Section -->
+    <section class="hero hero--full">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">Welcome to<br />Kings Highway</h1>
+            <p class="hero__subtitle">A place of equipping and connecting.</p>
+            <div class="hero__buttons">
+                <a href="#" class="btn btn--blue">Who We Are</a>
+                <a href="#" class="btn btn--white">Watch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sunday Info Section -->
+    <section class="sunday-info" id="sunday-info">
+        <div class="sunday-info__svg-bg"></div>
+
+        <div class="sunday-info__container">
+            <div class="sunday-info__text">
+                <h2 class="sunday-info__heading">Join Us This Sunday</h2>
+                <p class="sunday-info__details">
+                    We gather every Sunday to worship, grow, and connect.
+                    <br><br>
+                    <strong>Service Times:</strong><br>
+                    7:00 AM – Morning Service<br>
+                    9:30 AM – Bible Study<br>
+                    11:00 AM – Main Worship Experience
+                    <br><br>
+                    <strong>Location:</strong><br>
+                    Kings Highway Church, Eldoret, Kenya
+                </p>
+                <a href="https://maps.google.com?q=Kings+Highway+Church+Eldoret+Kenya" target="_blank" class="btn btn--secondary">
+                    Get Directions
+                </a>
+            </div>
+            <div class="sunday-info__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.5491823912912!2d35.24480018588539!3d0.5483955109260022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101402bd4f0d1%3A0xf2e43ba1b8d3f8c9!2sKings%20Highway%20Church!5e0!3m2!1sen!2ske!4v1749994990102!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Mission Section -->
+    <section class="mission mission--dark">
+        <div class="container">
+            <h2 class="mission__title">Our Mission</h2>
+            <p class="mission__text">
+            At Kings Highway Church, we exist to lead people into a growing relationship with Jesus. 
+            We believe in being a light in the city of Eldoret — a place of hope, healing, and purpose.
+            </p>
+        </div>
+    </section>
+
+    <!-- Ministry Grid Section -->
+    <section class="ministry" id="ministries">
+        <div class="container">
+            <div class="ministry__header">
+                <h2 class="ministry__title">Get Involved</h2>
+                <p class="ministry__subtitle">Be the hands and feet of Jesus.</p>
+            </div>
+
+            <div class="ministry__grid">
+                <div class="ministry__card" style="background-image: url('assets/images/serve-bg.jpeg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Serve</h3>
+                        <p class="ministry__desc">Join a team and use your gifts to make a difference.</p>
+                        <a href="involved.html#serve-teams" class="ministry__link">Start Serving →</a>
+                    </div>
+                </div>
+
+                <div class="ministry__card" style="background-image: url('assets/images/groups-bg.jpg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Small Groups</h3>
+                        <p class="ministry__desc">Find your tribe, grow in faith and community.</p>
+                        <a href="involved.html#small-group-card" class="ministry__link">Join a Group →</a>
+                    </div>
+                </div>
+
+                <div class="ministry__card" style="background-image: url('assets/images/events-bg.jpg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Events</h3>
+                        <p class="ministry__desc">See what's happening at Kings Highway Church.</p>
+                        <a href="events.html" class="ministry__link">See Events →</a>
+                    </div>
+                </div>
+
+                <div class="ministry__card" style="background-image: url('assets/images/kids.jpg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Kids</h3>
+                        <p class="ministry__desc">A fun, safe place for children to grow in Christ.</p>
+                        <a href="involved.html#kids-ministry-card" class="ministry__link">Explore Kids →</a>
+                    </div>
+                </div>
+
+                <div class="ministry__card" style="background-image: url('assets/images/youth.jpg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Youth</h3>
+                        <p class="ministry__desc">Helping teens know Jesus in a modern world.</p>
+                        <a href="involved.html#youth-ministry-card" class="ministry__link">Explore Youth →</a>
+                    </div>
+                </div>
+
+                <div class="ministry__card" style="background-image: url('assets/images/offerings.jpg');">
+                    <div class="ministry__overlay">
+                        <h3 class="ministry__name">Give</h3>
+                        <p class="ministry__desc">Support our mission to reach and serve others.</p>
+                        <a href="give.html" class="ministry__link">Give Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured-Sermon Section -->
+    <section class="featured-sermon">
+        <div class="container featured-sermon__container">
+            <div class="featured-sermon__content">
+                <h2 class="section-heading">Latest Message</h2>
+                <h3 class="featured-sermon__title">Faith Over Fear</h3>
+                <p class="featured-sermon__desc">
+                    Discover how to stand firm in faith in the middle of life’s storms. A message by Rev. Hank that speaks directly to your heart.
+                </p>
+                <a href="#" class="btn btn-dark">Watch Sermon</a>
+            </div>
+
+            <div class="featured-sermon__media">
+                <div class="video-thumbnail">
+                    <img src="assets/images/sermon-thumbnail.jpeg" alt="Sermon Thumbnail">
+                    <a href="https://www.youtube.com/watch?v=your-sermon-video" class="play-button" target="_blank">▶</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEXT STEPS Section -->
+    <section class="nextsteps">
+        <div class="nextsteps__card">
+            <div class="nextsteps__gradient-overlay"></div>
+            <div class="nextsteps__content">
+                <h2 class="nextsteps__title">God wants to use you.</h2>
+                <p class="nextsteps__subtitle">
+                    We're here to support you regardless of where you are on your faith journey.
+                    Let us guide you towards your next step and discover what God has in store for your life.
+                </p>
+                <a href="#" class="nextsteps__btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+    <div class="footer__container">
+        <!-- Left: Logo & tagline -->
+        <div class="footer__brand">
+        <img src="assets/images/logo.svg" alt="Kings Highway Church" class="footer__logo" />
+        <p class="footer__tagline">A place to grow in faith, family, and purpose.</p>
+        </div>
+
+        <!-- Middle: Quick links -->
+        <div class="footer__links">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Plan Your Visit</a></li>
+            <li><a href="#">Sermons</a></li>
+            <li><a href="#">Serve</a></li>
+            <li><a href="#">Give</a></li>
+        </ul>
+        </div>
+
+        <!-- Right: Contact & socials -->
+        <div class="footer__contact">
+        <h4 class="footer__heading">Contact Us</h4>
+        <p>Roadblock, Eldoret, Kenya</p>
+        <p>Sunday Services: 7AM & 11AM</p>
+        <p>Email: info@kingshighway.church</p>
+        <div class="footer__socials">
+            <a href="#"><img src="assets/images/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="assets/images/youtube.svg" alt="YouTube" /></a>
+            <a href="#"><img src="assets/images/instagram.svg" alt="Instagram" /></a>
+        </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>&copy; 2025 Kings Highway Church. All rights reserved.</p>
+    </div>
+    </footer>
+
+
+
+
+   <!-- Next Steps Button -->
+    <div class="next-steps-entry">
+        <button id="openNextSteps">
+        <img src="assets/images/add.png" alt="Next Steps Icon" />
+        <span>Next Steps</span>
+        </button>
+  </div>
+  
+  <!-- Overlay + Panel -->
+  <div id="nextStepsOverlay" class="next-steps-overlay hidden">
+    <div class="next-steps-panel">
+      <button id="closeNextSteps" class="close-panel">X</button>
+      <h2>Next Steps</h2>
+      <p>How can we help you take your next step?</p>
+      <ul class="steps-list">
+        <li><a href="#visit" id="planVisitLink">🧭 Plan Your Visit</a></li>
+        <li><a href="#sermons" id="watchSermonLink">🎥 Watch Sermons</a></li>
+        <li><a href="#groups" id="joinGroupLink">🤝 Join a Group</a></li>
+        <li><a href="#prayer" id="getPrayerLink">🙏 Get Prayer</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+    <!-- Chat Overlay -->
+    <div id="visitOverlay" class="visit__overlay hidden"></div>
+
+    <!-- Chat Modal -->
+    <div id="visitModal" class="visit__modal hidden">
+    <button id="visitClose" class="visit__close">&times;</button>
+
+    <div class="chat__step step1">
+        <p class="chat__bot">👋 Welcome! Planning a visit?</p>
+        <p class="chat__bot">What’s your name?</p>
+        <input type="text" id="visitorName" class="chat__input" placeholder="Your name" />
+        <button class="chat__next" data-next="step2">Next</button>
+    </div>
+
+    <div class="chat__step step2 hidden">
+        <p class="chat__bot">Nice to meet you, <span id="namePreview"></span>! When would you like to visit?</p>
+        <input type="date" id="visitDate" class="chat__input" />
+        <button class="chat__next" data-next="step3">Next</button>
+    </div>
+
+    <div class="chat__step step3 hidden">
+        <p class="chat__bot">One last thing — what’s your email so we can reach you?</p>
+        <input type="email" id="visitorEmail" class="chat__input" placeholder="you@example.com" />
+        <button class="chat__next" id="submitVisit">Submit</button>
+    </div>
+
+    <div class="chat__step step4 hidden">
+        <p class="chat__bot">🎉 You're all set! We look forward to seeing you soon.</p>
+    </div>
+    </div>
+
+
+    <!-- Chat Overlay -->
+    <div id="sermonOverlay" class="visit__overlay hidden"></div>
+
+    <!-- Sermon Modal -->
+    <div id="sermonModal" class="visit__modal hidden">
+    <button id="sermonClose" class="visit__close">&times;</button>
+
+    <div class="chat__step sermon-step1">
+        <p class="chat__bot">👋 Looking for a sermon?</p>
+        <p class="chat__bot">What topic are you interested in?</p>
+        <input type="text" id="sermonTopic" class="chat__input" placeholder="Hope, Prayer, Faith..." />
+        <button class="chat__next" data-next="sermon-step2">Next</button>
+    </div>
+
+    <div class="chat__step sermon-step2 hidden">
+        <p class="chat__bot">🙏 Awesome! Here are some sermon options:</p>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="#" class="chat__btn">▶️ Latest Sermon</a>
+        <a href="#" class="chat__btn">📚 Sermon Series</a>
+        <a href="#" class="chat__btn">🎙 Popular Topics</a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Overlay -->
+    <div id="groupOverlay" class="visit__overlay hidden"></div>
+
+    <!-- Join Group Modal -->
+    <div id="groupModal" class="visit__modal hidden">
+    <button id="groupClose" class="visit__close">&times;</button>
+
+    <div class="chat__step group-step1">
+        <p class="chat__bot">🙌 Interested in joining a group?</p>
+        <p class="chat__bot">What kind of group are you looking for?</p>
+        <select id="groupType" class="chat__input">
+        <option value="">Select type...</option>
+        <option value="men">👨 Men’s Group</option>
+        <option value="women">👩 Women’s Group</option>
+        <option value="youth">🧒 Youth Group</option>
+        </select>
+        <button class="chat__next" data-next="group-step2">Next</button>
+    </div>
+
+    <div class="chat__step group-step2 hidden">
+        <p class="chat__bot">Great choice! What day of the week works best for you?</p>
+        <select id="groupDay" class="chat__input">
+        <option value="">Choose a day...</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+        </select>
+        <button class="chat__next" id="submitGroup">Submit</button>
+    </div>
+
+    <div class="chat__step group-step3 hidden">
+        <p class="chat__bot">🎉 You're in! We’ll connect you with a group soon.</p>
+    </div>
+    </div>
+
+
+    <!-- Overlay -->
+    <div id="prayerOverlay" class="visit__overlay hidden"></div>
+
+    <!-- Prayer Modal -->
+    <div id="prayerModal" class="visit__modal hidden">
+    <button id="prayerClose" class="visit__close">&times;</button>
+
+    <div class="chat__step prayer-step1">
+        <p class="chat__bot">🙏 Need prayer?</p>
+        <p class="chat__bot">What’s your name?</p>
+        <input type="text" id="prayerName" class="chat__input" placeholder="Your name" />
+        <button class="chat__next" data-next="prayer-step2">Next</button>
+    </div>
+
+    <div class="chat__step prayer-step2 hidden">
+        <p class="chat__bot">Thanks <span id="prayerNamePreview"></span>, how can we pray for you?</p>
+        <textarea id="prayerRequest" class="chat__input" rows="4" placeholder="Type your prayer request here..."></textarea>
+        <button class="chat__next" id="submitPrayer">Submit</button>
+    </div>
+
+    <div class="chat__step prayer-step3 hidden">
+        <p class="chat__bot">🕊️ Thank you. Our prayer team will keep you in prayer.</p>
+    </div>
+    </div>
+
+  
+   
+    
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

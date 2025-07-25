@@ -1,0 +1,449 @@
+/* ============================
+   About Page Styles
+============================ */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.about-discover {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.core-values {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card img {
+  width: 48px;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+.beliefs-section {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+  background: #000;
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #333;
+}
+
+.accordion-body {
+  padding: 1rem;
+  display: none;
+  border-top: 1px solid #eee;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  content: "×";
+}
+
+
+
+
+/* === Leadership Section === */
+/* === Lead Pastor Feature === */
+.lead-pastor-feature {
+  background: #111;
+  color: #fff;
+  padding: 5rem 1rem;
+}
+
+.pastor-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.pastor-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.pastor-content {
+  max-width: 600px;
+}
+
+.pastor-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.pastor-title {
+  font-size: 1.2rem;
+  color: #f0c040;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.pastor-vision {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #ddd;
+}
+
+.signature {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Optional: Hover animation for image */
+.pastor-image img:hover {
+  transform: scale(1.03);
+}
+
+/* === Leadership Section === */
+.leadership {
+  padding: 5rem 1rem;
+  background: #e6e6e6;
+  text-align: center;
+}
+
+.leadership .section-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+
+/* === Team Section === */
+.team-section {
+  padding: 5rem 1rem;
+  background: #f9f9f9;
+  color: #111;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #eee;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.team-role {
+  color: #b22222;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.team-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.church-history {
+  background: #fff;
+  padding: 4rem 1.5rem;
+}
+
+.history__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history__image {
+  flex: 1;
+  background: url('/KingsChurch/assets/images/hero.png') no-repeat center/cover;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.history__text {
+  flex: 1;
+}
+
+.history__text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.history__text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .history__content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .history__image {
+    height: 400px;
+  }
+}
+
+
+.vmv-section {
+  background: #f8f8f8;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.vmv-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vmv-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.vmv-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.vmv-card:hover {
+  transform: translateY(-5px);
+}
+
+.vmv-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.vmv-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .vmv-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+.timeline-section {
+  background: #fff;
+  padding: 4rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid #000;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -1.15rem;
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.timeline-item .year {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  color: #2224b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+

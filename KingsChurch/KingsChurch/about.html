@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Kings Highway Church</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/about.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ✅ Reuse the same navbar from index.html -->
+    <div class="nav-wrapper">
+        <!-- Peeking News Strip -->
+        <div class="peeking-news" id="peekingNews" >
+            📢 Next Baptism Sunday – June 23rd! Sign Up Today.
+        </div>
+
+        <!-- Navigation -->
+        <header class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Kings Highway Church Logo" />
+                    </a>   
+                </div>
+
+                <nav class="nav__links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="involved.html">Get Involved</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="give.html">Give</a>
+                </nav>
+
+                <div class="nav__actions">
+                    <a href="watch.html" class="btn btn--outline btn--small">Watch</a>
+                    <div class="nav__toggle" id="navToggle">
+                        <img src="assets/images/icon-menu.png" alt="Menu Icon" id="menuIcon" />
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div> 
+
+    <main>
+
+        <!-- ✅ About Hero Section -->
+        <section class="pages-hero">
+            <div class="pages-hero__overlay">
+                <div class="pages-hero__label">About</div>
+                <h1 class="pages-hero__title">Who We Are</h1>
+                <a href="#values" class="pages-hero__btn">Learn More</a>
+            </div>
+        </section>
+
+        <!-- ✅ Discover Block -->
+        <section class="about-discover">
+            <h2 class="section-title">Discover the heart and vision behind Church.</h2>
+
+            <div class="card-grid">
+                <a href="#values">
+                    <div class="about-card">
+                        <img src="/KingsChurch/assets/images/values-img.png" alt="Our Values" />
+                        <h3>Our Values</h3>
+                    </div>
+                </a>
+                
+                <a href="#beliefs">
+                    <div class="about-card">
+                        <img src="/KingsChurch/assets/images/beliefs.png" alt="Our Beliefs" />
+                        <h3>Our Beliefs</h3>
+                    </div>
+                </a>
+                
+
+                <a href="#leadership">
+                    <div class="about-card">
+                        <img src="/KingsChurch/assets/images/leadership.png" alt="Our Leadership" />
+                        <h3>Our Leadership</h3>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+
+        <!-- ✅ Our Values Section -->
+        <section class="core-values" id="values">
+            <h2 class="section-title">Our Core Values</h2>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <img src="/KingsChurch/assets/images/logo.svg" alt="Love God" />
+                    <h3>Love God</h3>
+                    <p>Everything we do flows from our desire to know and honor God deeply.</p>
+                </div>
+
+                <div class="value-card">
+                    <img src="/KingsChurch/assets/images/logo.svg" alt="Love People" />
+                    <h3>Love People</h3>
+                    <p>We’re committed to serving others, building relationships, and walking in compassion.</p>
+                </div>
+
+                <div class="value-card">
+                    <img src="/KingsChurch/assets/images/logo.svg" alt="Make Disciples" />
+                    <h3>Make Disciples</h3>
+                    <p>We’re called to grow others through truth, community, and a shared life of faith.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beliefs" class="beliefs-section">
+        <div class="container">
+            <h2 class="section-title">Our Beliefs</h2>
+            <div class="accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    The Bible
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                <p>We believe the Bible is the inspired Word of God and the ultimate authority for faith and life.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    God
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                <p>We believe in one God who exists eternally in three persons: Father, Son, and Holy Spirit.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Jesus Christ
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                <p>We believe Jesus is the Son of God, who lived a sinless life, died on the cross, and rose again for our salvation.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Salvation
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                <p>We believe that salvation is a gift of grace received through faith in Jesus Christ alone.</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- ✅ Church Leadership Section -->
+        <section class="leadership" id="leadership">
+            <div class="container">
+                <h2 class="section-title">Church Leadership</h2>
+
+                <!-- 🧑‍✝️ Lead Pastor Card -->
+                <!-- Lead Pastor Feature Section -->
+                <section class="lead-pastor-feature" id="lead-pastor">
+                <div class="container">
+                    <div class="pastor-wrapper" data-aos="fade-up">
+                    <div class="pastor-image">
+                        <img src="/KingsChurch/assets/images/rev.jpg" alt="Rev. James Mwangi & Wife" />
+                    </div>
+                    <div class="pastor-content">
+                        <h2>Rev. Henry & Mrs. Margaret Wedende</h2>
+                        <p class="pastor-title">Lead Pastor & First Lady</p>
+                        <p class="pastor-vision">
+                        With a heart for people and a calling to guide, Rev. Henry and Margaret Wedende have led King’s Highway Church with vision, compassion, and unwavering faith. Their mission is to raise a generation rooted in truth, love, and purpose.
+                        </p>
+                        <p class="signature">— Serving Christ, Serving You</p>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+
+            <!-- 👥 Other Leaders Grid -->
+            <section class="team-section" id="team">
+            <div class="container">
+                <h2 class="section-title">Meet Our Team</h2>
+                <div class="team-grid">
+
+            <!-- Praise & Worship Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pastor.jpg" alt="Malcolm - Worship Leader" />
+                <h3>Malcolm</h3>
+                <p class="team-role">Praise & Worship Leader</p>
+                <p class="team-desc">
+                    Malcolm has been leading worship for over 10 years and has a heart for leading people into an authentic encounter with God through music.
+                </p>
+                </div>
+
+                <!-- Deacon -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas.jpg" alt="John - Deacon" />
+                <h3>John</h3>
+                <p class="team-role">Deacon</p>
+                <p class="team-desc">
+                    John ensures the church’s operations and spiritual well-being are running smoothly, serving faithfully and humbly.
+                </p>
+                </div>
+
+                <!-- Men's Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas2.jpg" alt="Paul - Men's Leader" />
+                <h3>Paul</h3>
+                <p class="team-role">Men’s Leader</p>
+                <p class="team-desc">
+                    Paul disciples men to be strong leaders in their homes, workplaces, and communities through prayer and mentoring.
+                </p>
+                </div>
+
+                <!-- Women's Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas.jpg" alt="Janet - Women's Leader" />
+                <h3>Janet</h3>
+                <p class="team-role">Women’s Leader</p>
+                <p class="team-desc">
+                    Janet empowers women to grow spiritually and build lasting relationships through fellowship and the Word.
+                </p>
+                </div>
+
+                <!-- Youth Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas2.jpg" alt="Samuel - Youth Leader" />
+                <h3>Samuel</h3>
+                <p class="team-role">Youth Leader</p>
+                <p class="team-desc">
+                    Samuel passionately leads teens into a deeper relationship with Christ through vibrant youth programs.
+                </p>
+                </div>
+
+                <!-- Media Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas2.jpg" alt="Grace - Media Leader" />
+                <h3>Grace</h3>
+                <p class="team-role">Media Leader</p>
+                <p class="team-desc">
+                    Grace oversees all visual and digital media, ensuring every message reaches hearts both in-person and online.
+                </p>
+                </div>
+
+                <!-- Usher Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas.jpg" alt="Robert - Usher Leader" />
+                <h3>Robert</h3>
+                <p class="team-role">Usher Leader</p>
+                <p class="team-desc">
+                    Robert leads a warm and welcoming ushering team, creating an atmosphere of hospitality and order every Sunday.
+                </p>
+                </div>
+
+                <!-- Events Leader -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas2.jpg" alt="Linda - Events Leader" />
+                <h3>Linda</h3>
+                <p class="team-role">Events Leader</p>
+                <p class="team-desc">
+                    Linda coordinates impactful church events and programs that bring the community together with purpose and joy.
+                </p>
+                </div>
+
+                <!-- Sunday School Lead -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas.jpg" alt="Mary - Sunday School Leader" />
+                <h3>Mary</h3>
+                <p class="team-role">Sunday School Leader</p>
+                <p class="team-desc">
+                    Mary leads our children’s ministry, planting seeds of faith in young hearts with fun and foundational teaching.
+                </p>
+                </div>
+
+                <!-- Praise & Worship (Additional) -->
+                <div class="team-card">
+                <img src="/KingsChurch/assets/images/pas2.jpg" alt="Elijah - Worship Coordinator" />
+                <h3>Elijah</h3>
+                <p class="team-role">Music Coordinator</p>
+                <p class="team-desc">
+                    Elijah organizes worship sets and supports the choir with sound, lyrics, and rhythm to foster a powerful worship experience.
+                </p>
+                </div>
+
+
+                <!-- Add more leader cards below as needed -->
+
+                </div>
+            </div>
+            </section>
+            
+            </div>
+        </div>
+        </section>
+
+
+        <section class="church-history">
+            <div class="history__content">
+                <div class="history__image"></div>
+                <div class="history__text">
+                <h2>Our Story</h2>
+                <p>
+                    Kings Highway Church began with a simple prayer and a small gathering
+                    of believers in 2003. What started as a humble meeting under a tree
+                    has grown into a vibrant community of faith. Through every season,
+                    we’ve witnessed God’s faithfulness and transformation in lives.
+                </p>
+                <p>
+                    Today, we continue to walk that same road — welcoming, loving,
+                    and lifting others up through the hope of the gospel.
+                </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="vmv-section">
+            <div class="container">
+                <h2>Vision, Mission & Values</h2>
+                <div class="vmv-grid">
+                <div class="vmv-card">
+                    <h3>📌 Vision</h3>
+                    <p>To be a Christ-centered community that transforms lives and impacts generations.</p>
+                </div>
+                <div class="vmv-card">
+                    <h3>🎯 Mission</h3>
+                    <p>To lead people into a growing relationship with Jesus through worship, discipleship, and outreach.</p>
+                </div>
+                <div class="vmv-card">
+                    <h3>❤️ Values</h3>
+                    <p>We value faith, unity, integrity, compassion, and excellence in everything we do.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timeline-section">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                <span class="year">2003</span>
+                <p>Founded under a tree with a handful of believers.</p>
+                </div>
+                <div class="timeline-item">
+                <span class="year">2008</span>
+                <p>Constructed the first church structure and hosted community crusades.</p>
+                </div>
+                <div class="timeline-item">
+                <span class="year">2015</span>
+                <p>Youth programs and women's ministry launched.</p>
+                </div>
+                <div class="timeline-item">
+                <span class="year">2023</span>
+                <p>New church campus opened and digital outreach began.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Featured-Sermon Section -->
+        <section class="featured-sermon">
+            <div class="container featured-sermon__container">
+                <div class="featured-sermon__content">
+                    <h2 class="section-heading">Latest Message</h2>
+                    <h3 class="featured-sermon__title">Faith Over Fear</h3>
+                    <p class="featured-sermon__desc">
+                        Discover how to stand firm in faith in the middle of life’s storms. A message by Rev. Hank that speaks directly to your heart.
+                    </p>
+                    <a href="#" class="btn btn-dark">Watch Sermon</a>
+                </div>
+
+                <div class="featured-sermon__media">
+                    <div class="video-thumbnail">
+                        <img src="assets/images/sermon-thumbnail.jpeg" alt="Sermon Thumbnail">
+                        <a href="https://www.youtube.com/watch?v=your-sermon-video" class="play-button" target="_blank">▶</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pre-footer">
+            <div class="pre-footer__card">
+                <div class="pre-footer__gradient-overlay"></div>
+                <div class="pre-footer__content">
+                    <h2 class="pre-footer__title">God wants to use you.</h2>
+                    <p class="pre-footer__subtitle">
+                        We're here to support you regardless of where you are on your faith journey.
+                        Let us guide you towards your next step and discover what God has in store for your life.
+                    </p>
+                    <a href="#" class="pre-footer__btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="next-steps-panel-window">
+        <!-- Next Steps Button -->
+        <div class="next-steps-entry">
+                <button id="openNextSteps">
+                <img src="assets/images/add.png" alt="Next Steps Icon" />
+                <span>Next Steps</span>
+                </button>
+        </div>
+        
+        <!-- Overlay + Panel -->
+        <div id="nextStepsOverlay" class="next-steps-overlay hidden">
+            <div class="next-steps-panel">
+            <button id="closeNextSteps" class="close-panel">X</button>
+            <h2>Next Steps</h2>
+            <p>How can we help you take your next step?</p>
+            <ul class="steps-list">
+                <li><a href="#visit" id="planVisitLink">🧭 Plan Your Visit</a></li>
+                <li><a href="#sermons" id="watchSermonLink">🎥 Watch Sermons</a></li>
+                <li><a href="#groups" id="joinGroupLink">🤝 Join a Group</a></li>
+                <li><a href="#prayer" id="getPrayerLink">🙏 Get Prayer</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Chat Overlay -->
+        <div id="visitOverlay" class="visit__overlay hidden"></div>
+        <!-- Chat Modal -->
+        <div id="visitModal" class="visit__modal hidden">
+        <button id="visitClose" class="visit__close">&times;</button>
+
+        <div class="chat__step step1">
+            <p class="chat__bot">👋 Welcome! Planning a visit?</p>
+            <p class="chat__bot">What’s your name?</p>
+            <input type="text" id="visitorName" class="chat__input" placeholder="Your name" />
+            <button class="chat__next" data-next="step2">Next</button>
+        </div>
+
+        <div class="chat__step step2 hidden">
+            <p class="chat__bot">Nice to meet you, <span id="namePreview"></span>! When would you like to visit?</p>
+            <input type="date" id="visitDate" class="chat__input" />
+            <button class="chat__next" data-next="step3">Next</button>
+        </div>
+
+        <div class="chat__step step3 hidden">
+            <p class="chat__bot">One last thing — what’s your email so we can reach you?</p>
+            <input type="email" id="visitorEmail" class="chat__input" placeholder="you@example.com" />
+            <button class="chat__next" id="submitVisit">Submit</button>
+        </div>
+
+        <div class="chat__step step4 hidden">
+            <p class="chat__bot">🎉 You're all set! We look forward to seeing you soon.</p>
+        </div>
+        </div>
+
+        <!-- Chat Overlay -->
+        <div id="sermonOverlay" class="visit__overlay hidden"></div>
+        <!-- Sermon Modal -->
+        <div id="sermonModal" class="visit__modal hidden">
+            <button id="sermonClose" class="visit__close">&times;</button>
+
+            <div class="chat__step sermon-step1">
+                <p class="chat__bot">👋 Looking for a sermon?</p>
+                <p class="chat__bot">What topic are you interested in?</p>
+                <input type="text" id="sermonTopic" class="chat__input" placeholder="Hope, Prayer, Faith..." />
+                <button class="chat__next" data-next="sermon-step2">Next</button>
+            </div>
+
+            <div class="chat__step sermon-step2 hidden">
+                <p class="chat__bot">🙏 Awesome! Here are some sermon options:</p>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <a href="#" class="chat__btn">▶️ Latest Sermon</a>
+                <a href="#" class="chat__btn">📚 Sermon Series</a>
+                <a href="#" class="chat__btn">🎙 Popular Topics</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div id="groupOverlay" class="visit__overlay hidden"></div>
+        <!-- Join Group Modal -->
+        <div id="groupModal" class="visit__modal hidden">
+            <button id="groupClose" class="visit__close">&times;</button>
+
+            <div class="chat__step group-step1">
+                <p class="chat__bot">🙌 Interested in joining a group?</p>
+                <p class="chat__bot">What kind of group are you looking for?</p>
+                <select id="groupType" class="chat__input">
+                <option value="">Select type...</option>
+                <option value="men">👨 Men’s Group</option>
+                <option value="women">👩 Women’s Group</option>
+                <option value="youth">🧒 Youth Group</option>
+                </select>
+                <button class="chat__next" data-next="group-step2">Next</button>
+            </div>
+
+            <div class="chat__step group-step2 hidden">
+                <p class="chat__bot">Great choice! What day of the week works best for you?</p>
+                <select id="groupDay" class="chat__input">
+                <option value="">Choose a day...</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+                </select>
+                <button class="chat__next" id="submitGroup">Submit</button>
+            </div>
+
+            <div class="chat__step group-step3 hidden">
+                <p class="chat__bot">🎉 You're in! We’ll connect you with a group soon.</p>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div id="prayerOverlay" class="visit__overlay hidden"></div>
+        <!-- Prayer Modal -->
+        <div id="prayerModal" class="visit__modal hidden">
+        <button id="prayerClose" class="visit__close">&times;</button>
+
+        <div class="chat__step prayer-step1">
+            <p class="chat__bot">🙏 Need prayer?</p>
+            <p class="chat__bot">What’s your name?</p>
+            <input type="text" id="prayerName" class="chat__input" placeholder="Your name" />
+            <button class="chat__next" data-next="prayer-step2">Next</button>
+        </div>
+
+        <div class="chat__step prayer-step2 hidden">
+            <p class="chat__bot">Thanks <span id="prayerNamePreview"></span>, how can we pray for you?</p>
+            <textarea id="prayerRequest" class="chat__input" rows="4" placeholder="Type your prayer request here..."></textarea>
+            <button class="chat__next" id="submitPrayer">Submit</button>
+        </div>
+
+        <div class="chat__step prayer-step3 hidden">
+            <p class="chat__bot">🕊️ Thank you. Our prayer team will keep you in prayer.</p>
+        </div>
+        </div>
+    </div>
+
+    
+
+    <!-- ✅ Reuse same footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Left: Logo & tagline -->
+            <div class="footer__brand">
+            <img src="assets/images/logo.svg" alt="Kings Highway Church" class="footer__logo" />
+            <p class="footer__tagline">A place to grow in faith, family, and purpose.</p>
+            </div>
+
+            <!-- Middle: Quick links -->
+            <div class="footer__links">
+            <h4 class="footer__heading">Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plan Your Visit</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Serve</a></li>
+                <li><a href="#">Give</a></li>
+            </ul>
+            </div>
+
+            <!-- Right: Contact & socials -->
+            <div class="footer__contact">
+            <h4 class="footer__heading">Contact Us</h4>
+            <p>Roadblock, Eldoret, Kenya</p>
+            <p>Sunday Services: 7AM & 11AM</p>
+            <p>Email: info@kingshighway.church</p>
+            <div class="footer__socials">
+                <a href="#"><img src="assets/images/facebook.svg" alt="Facebook" /></a>
+                <a href="#"><img src="assets/images/youtube.svg" alt="YouTube" /></a>
+                <a href="#"><img src="assets/images/instagram.svg" alt="Instagram" /></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Kings Highway Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

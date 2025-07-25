@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kings Highway Church</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <!-- Peeking News Strip -->
+        <div class="peeking-news" id="peekingNews" >
+            📢 Next Baptism Sunday – June 23rd! Sign Up Today.
+        </div>
+
+        <!-- Navigation -->
+        <header class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Kings Highway Church Logo" />
+                    </a>   
+                </div>
+
+                <nav class="nav__links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="involved.html">Get Involved</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="give.html">Give</a>
+                </nav>
+
+                <div class="nav__actions">
+                    <a href="watch.html" class="btn btn--outline btn--small">Watch</a>
+                    <div class="nav__toggle" id="navToggle">
+                        <img src="assets/images/icon-menu.png" alt="Menu Icon" id="menuIcon" />
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+
+    <section class="gallery-hero">
+    <h1>Our Church Gallery</h1>
+    <p>Click on a category card below to view photos sorted by year & month.</p>
+    </section>
+
+    <!-- CATEGORY CARDS -->
+   <!-- CATEGORY CARDS -->
+    <section class="category-cards">
+    <div class="category-card" data-category="worship">
+        <h3>Worship Night</h3>
+    </div>
+    <div class="category-card" data-category="youths">
+        <h3>Youths</h3>
+    </div>
+    <div class="category-card" data-category="events">
+        <h3>Special Events</h3>
+    </div>
+    <div class="category-card" data-category="baptism">
+        <h3>Baptism</h3>
+    </div>
+    </section>
+
+    <!-- VIEWING STATUS SECTION -->
+    <section id="viewing-section" class="viewing-status hidden">
+    <p>Viewing photos from <span id="active-category">...</span></p>
+    </section>
+
+    <!-- IMAGE GALLERY SECTION -->
+    <section id="gallery-placeholder" class="gallery-placeholder">
+    <p class="placeholder-message">No category selected yet.</p>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Expanded Image">
+    <div id="modalCaption"></div>
+    </div>
+
+
+
+
+
+
+  <script src="gallery.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="/KingsChurch/js/main.js"></script>
+    <script src="/KingsChurch/js/gallery.js"></script>
+
+</body>
+</html>

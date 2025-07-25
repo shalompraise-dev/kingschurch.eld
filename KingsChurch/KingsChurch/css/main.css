@@ -1,0 +1,887 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+
+/* Navigation */
+  /* Peek alert Styles */
+.peeking-news {
+  width: 100%;
+  background: linear-gradient(to right, #252525, #9b9b9b);
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1.4s ease-in-out;
+}
+
+.peeking-news.show {
+  opacity: 1;
+  max-height: 50px; /* Adjust if needed */
+}
+
+  /* Base Navigation Styles */
+.nav-wrapper {
+  transition: all 1s ease-in-out;
+  padding: 0 0 .75rem 0;
+  background-color: #000; /* ← black background */
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+}
+
+.nav {
+  background-color: #000; /* ← black background */
+  margin-top: 5px;
+}
+
+.nav__container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo img {
+  height: 50px;
+}
+
+/* Links */
+.nav__links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 1.5rem;
+  background-color: #000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.nav__links a {
+  color: #fff; /* white text */
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav__links a:last-child {
+  margin-bottom: 0;
+}
+
+.nav__links a:hover {
+  opacity: 0.75;
+}
+
+/* Actions */
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__toggle {
+  cursor: pointer;
+}
+
+.nav__toggle img {
+  height: 24px;
+  filter: brightness(0) invert(1); /* Makes hamburger icon white */
+}
+
+/* Button Styles */
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+
+.btn--outline {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+}
+
+.btn--outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn--small {
+  font-size: 0.875rem;
+}
+
+/* Button styles (unchanged) */
+.btn {
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn--blue {
+  background-color: #0142B2;
+  color: #fff;
+}
+
+.btn--blue:hover {
+  background-color: #002481;
+}
+
+.btn--orange:hover {
+  background-color: #d95612;
+}
+
+.btn--orange {
+  background-color: #f1671f;
+  color: #fff;
+}
+
+.btn--orange:hover {
+  background-color: #d95612;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn--white:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+  .nav__links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__links a {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.featured-sermon {
+  background-color: #ffffff;
+  padding: 6rem 1.5rem;
+}
+
+.featured-sermon__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 900px; /* Tighter layout */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.featured-sermon__content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.featured-sermon__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.featured-sermon__desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.featured-sermon__media {
+  width: 100%;
+  max-width: 560px;
+}
+
+.video-thumbnail {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .featured-sermon__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featured-sermon__content {
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+/* Pre footer Section */
+.pre-footer {
+  padding: 4rem 2.5rem;
+  background-color: #ffffff;
+}
+
+.pre-footer__card {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center right;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.pre-footer__gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.pre-footer__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: #fff;
+  max-width: 600px;
+}
+
+.pre-footer__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pre-footer__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.pre-footer__btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.pre-footer__btn:hover {
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .pre-footer {
+    padding: 6rem 2rem;
+  }
+
+  .pre-footer__title {
+    font-size: 2.75rem;
+  }
+
+  .pre-footer__subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__brand {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+
+.footer__tagline {
+  font-size: 0.95rem;
+  color: #ccc;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer__links,
+.footer__contact {
+  text-align: center;
+}
+
+.footer__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__links ul li a:hover {
+  color: #ffda7b;
+}
+
+.footer__contact p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.footer__socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__socials img {
+  width: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer__socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer__bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer__brand,
+  .footer__links,
+  .footer__contact {
+    flex: 1;
+  }
+
+  .footer__brand {
+    max-width: 250px;
+  }
+}
+
+
+
+/* Next Steps Section */
+.nextsteps {
+  padding: 4rem 2.5rem;
+  background-color: #ffffff;
+}
+
+.nextsteps__card {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center right;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nextsteps__gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.nextsteps__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: #fff;
+  max-width: 600px;
+}
+
+.nextsteps__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nextsteps__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.nextsteps__btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.nextsteps__btn:hover {
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .nextsteps {
+    padding: 6rem 2rem;
+  }
+
+  .nextsteps__title {
+    font-size: 2.75rem;
+  }
+
+  .nextsteps__subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+
+
+
+
+/* Next Steps Floating Button */
+/* --- Entry Button --- */
+.next-steps-entry {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+}
+
+.next-steps-entry button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* background: #ff5c1a; */
+  background: #FF3D07;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.next-steps-entry button:hover {
+  transform: scale(1.05);
+}
+
+.next-steps-entry img {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- Overlay --- */
+.next-steps-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.next-steps-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Panel --- */
+.next-steps-panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: scaleUp 0.4s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.next-steps-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.next-steps-panel p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.steps-list li a {
+  text-decoration: none;
+  background: #f6f6f6;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  display: block;
+  font-weight: 500;
+  color: #222;
+  transition: background 0.2s ease;
+}
+
+.steps-list li a:hover {
+  background: #eee;
+}
+
+/* --- Close Button --- */
+.close-panel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  color: #ff5c1a;
+  border: 2px solid #ff5c1a;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.close-panel:hover {
+  background: #ff5c1a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+/* --- Animation --- */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* --- Utility --- */
+.hidden {
+  display: none;
+}
+
+
+@keyframes pulseEffect {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.pulse {
+  animation: pulseEffect 1.5s ease-in-out infinite;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.visit__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.visit__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 60%;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.visit__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.chat__step {
+  margin-top: 1rem;
+}
+
+.chat__bot {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.chat__input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chat__next {
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Pages Hero Section */
+.pages-hero {
+  position: relative;
+  background: url('/KingsChurch/assets/images/about-hero.png') center center / cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.pages-hero__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.pages-hero__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.pages-hero__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pages-hero__btn {
+  background: #0142B2;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
